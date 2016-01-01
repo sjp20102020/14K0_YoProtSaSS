@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/indexSidebar.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="sjpShopApp">
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="border: medium solid green">
+    <div class="container-fluid">
+
+      <div class="navbar-header" style="border: medium dotted deeppink">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse"  style="border: medium dashed #3399ff">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="border: medium solid red">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" style="border: medium dashed orange">>
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Export</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item</a></li>
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+          <li><a href="">More navigation</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+        </ul>
+      </div>
+      <div ng-view="" ></div>
+  <!--    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style="border: medium dotted darkviolet">
+        <h1 class="page-header">Dashboard</h1>
+
+        <div class="row placeholders">
+          <div class="col-xs-6 col-sm-3 placeholder">
+            <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+          </div>
+          <div class="col-xs-6 col-sm-3 placeholder">
+            <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+          </div>
+          <div class="col-xs-6 col-sm-3 placeholder">
+            <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+          </div>
+          <div class="col-xs-6 col-sm-3 placeholder">
+            <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+          </div>
+        </div>
+
+        <h2 class="sub-header">Section title</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Header</th>
+              <th>Header</th>
+              <th>Header</th>
+              <th>Header</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1,001</td>
+              <td>Lorem</td>
+              <td>ipsum</td>
+              <td>dolor</td>
+              <td>sit</td>
+            </tr>
+            <tr>
+              <td>1,002</td>
+              <td>amet</td>
+              <td>consectetur</td>
+              <td>adipiscing</td>
+              <td>elit</td>
+            </tr>
+            <tr>
+              <td>1,003</td>
+              <td>Integer</td>
+              <td>nec</td>
+              <td>odio</td>
+              <td>Praesent</td>
+            </tr>
+            <tr>
+              <td>1,003</td>
+              <td>libero</td>
+              <td>Sed</td>
+              <td>cursus</td>
+              <td>ante</td>
+            </tr>
+            <tr>
+              <td>1,004</td>
+              <td>dapibus</td>
+              <td>diam</td>
+              <td>Sed</td>
+              <td>nisi</td>
+            </tr>
+            <tr>
+              <td>1,005</td>
+              <td>Nulla</td>
+              <td>quis</td>
+              <td>sem</td>
+              <td>at</td>
+            </tr>
+            <tr>
+              <td>1,006</td>
+              <td>nibh</td>
+              <td>elementum</td>
+              <td>imperdiet</td>
+              <td>Duis</td>
+            </tr>
+            <tr>
+              <td>1,007</td>
+              <td>sagittis</td>
+              <td>ipsum</td>
+              <td>Praesent</td>
+              <td>mauris</td>
+            </tr>
+            <tr>
+              <td>1,008</td>
+              <td>Fusce</td>
+              <td>nec</td>
+              <td>tellus</td>
+              <td>sed</td>
+            </tr>
+            <tr>
+              <td>1,009</td>
+              <td>augue</td>
+              <td>semper</td>
+              <td>porta</td>
+              <td>Mauris</td>
+            </tr>
+            <tr>
+              <td>1,010</td>
+              <td>massa</td>
+              <td>Vestibulum</td>
+              <td>lacinia</td>
+              <td>arcu</td>
+            </tr>
+            <tr>
+              <td>1,011</td>
+              <td>eget</td>
+              <td>nulla</td>
+              <td>Class</td>
+              <td>aptent</td>
+            </tr>
+            <tr>
+              <td>1,012</td>
+              <td>taciti</td>
+              <td>sociosqu</td>
+              <td>ad</td>
+              <td>litora</td>
+            </tr>
+            <tr>
+              <td>1,013</td>
+              <td>torquent</td>
+              <td>per</td>
+              <td>conubia</td>
+              <td>nostra</td>
+            </tr>
+            <tr>
+              <td>1,014</td>
+              <td>per</td>
+              <td>inceptos</td>
+              <td>himenaeos</td>
+              <td>Curabitur</td>
+            </tr>
+            <tr>
+              <td>1,015</td>
+              <td>sodales</td>
+              <td>ligula</td>
+              <td>in</td>
+              <td>libero</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+   -->
+    </div>
+  </div>
+
+
+ <!--   <div class="container">
+    <div ng-view=""></div>
+    </div>
+-->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="styles/501AStyle.css">
+    <link rel="stylesheet" href="styles/03BStyle.css"/>
+    <link rel="stylesheet" href="styles/07BStyle.css"/>
+    <link rel="stylesheet" href="styles/503AStyle.css"/>
+    <link rel="stylesheet" href="styles/08AStyle.css"/>
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css"/>
+
+
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+    <script src="ModAngular/01ACO/01ACtrl.js"></script>
+
+    <script src="ModAngular/01BCO/01BCtrl.js"></script>
+    <script src="ModAngular/01BCO/01BSer.js"></script>
+
+    <script src="ModAngular/01CCO/01CCtrl.js"></script>
+    <script src="ModAngular/01CCO/01CSer.js"></script>
+
+    <script src="ModAngular/03ACON/03ACtrl.js"></script>
+    <script src="ModAngular/03BCON/03BCtrl.js"></script>
+
+    <script src="ModAngular/04ASER/04ACtrl.js"></script>
+    <script src="ModAngular/04ASER/04ASer.js"></script>
+
+    <script src="ModAngular/04BSER/04BCtrl.js"></script>
+
+    <script src="ModAngular/07AFORM/07ACtrl.js"></script>
+    <script src="ModAngular/07BFORM/07BCtrl.js"></script>
+    <script src="ModAngular/07CFORM/07CCtrl.js"></script>
+    <script src="ModAngular/07DFORM/07DCtrl.js"></script>
+    <script src="ModAngular/07EFORM/07ECtrl.js"></script>
+
+    <script src="ModAngular/08ADIR/08ACtrl.js"></script>
+    <script src="ModAngular/08BDIR/08BCtrl.js"></script>
+    <script src="ModAngular/08CDIR/08CCtrl.js"></script>
+    <script src="ModAngular/08DDIR/08DCtrl.js"></script>
+
+
+    <script src="ModGeneral/502Aq/502ACtrl.js"></script>
+    <script src="ModGeneral/503Ajquery/503ACtrl.js"></script>
+
+    <script src="ModGeneral/504ASassBoots/504ACtrl.js"></script>
+    <script src="ModGeneral/504BSassBoots/504BCtrl.js"></script>
+    <script src="ModGeneral/504CSassBoots/504CCtrl.js"></script>
+
+    <script src="ModGeneral/505AUIBOOTS/505ACtrl.js"></script>
+    <script src="ModGeneral/505BUIBOOTS/505BCtrl.js"></script>
+    <script src="ModGeneral/505CUIBOOTS/505CCtrl.js"></script>
+
+    <!--<script src="ModGeneral/501AUiGrid/501ACtrl.js"></script>-->
+        <!-- endbuild -->
+</body>
+</html>

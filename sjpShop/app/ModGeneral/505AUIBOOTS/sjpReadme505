@@ -1,0 +1,14 @@
+select2--> ui-select
+
+
+1)bower
+ "angular-ui-select": "*"
+  or
+  "angular-ui-select": "0.13.2"
+
+
+2)
+index.html
+<link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css"/>
+<script src="bower_components/angular-ui-select/dist/select.js"></script>
+

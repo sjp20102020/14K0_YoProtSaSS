@@ -1,0 +1,23 @@
+
+
+<div  ng-controller="01CCtrl as invoice3">
+  <b>invoice3:</b>
+  <div>
+    Quantity: <input type="number" min="0" ng-model="invoice3.qty" required >
+  </div>
+  <div>
+    Costs: <input type="number" min="0" ng-model="invoice3.cost" required >
+    <select ng-model="invoice3.inCurr">
+      <option ng-repeat="c in invoice3.currencies">{{c}}</option>
+    </select>
+  </div>
+  <div>
+    <b>Total:</b>
+    <span ng-repeat="c in invoice3.currencies">
+      {{invoice3.total(c) | currency:c}}
+    </span>
+    <button class="btn" ng-click="invoice3.pay()">Pay</button>
+  </div>
+</div>
+
+

@@ -1,0 +1,18 @@
+
+<section class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+
+
+  <ui-select ng-model="employee.selected" theme="bootstrap">
+
+    <ui-select-match>
+      {{$select.selected}}
+    </ui-select-match>
+
+    <ui-select-choices repeat="e in employees |filter: $select.search">
+  {{e.name}}  | {{e.add}}
+    </ui-select-choices>
+  </ui-select>
+
+</section>

@@ -1,0 +1,149 @@
+<br/><br/><br/><br/><br/><br/>
+<basic-scope></basic-scope>
+
+
+
+
+
+
+
+
+
+<div>==================basic-scope2======1st instance================</div>
+<basic-scope2></basic-scope2><br/>
+in HTML directive scope childName :: {{childName}}<br/>
+in HTML controller scope parentName :: {{parentName}}<br/>
+
+
+<div>==================basic-scope2======2nd instance================</div>
+<basic-scope2></basic-scope2><br/>
+in HTML directive scope childName :: {{childName}}<br/>
+in HTML  controller scope parentName :: {{parentName}}<br/>
+<br/><br/><br/>
+
+
+
+
+<div>==================basic-scope3======1st instance================</div>
+<basic-scope3
+  p-cus-name="{{parentCust1.pCusName}}"
+  parent-cust="parentCust1"
+  tax-click="parentGetTax1()"
+  find-addr="findUKAddr1(hNo, pCode)"
+  ></basic-scope3><br/>
+in HTML directive scope childName :: {{childName}}<br/>
+in HTML controller scope parentName :: {{parentName}}<br/>
+in HTML controller scope parentCust1.pCusName :: {{parentCust1.pCusName}}<br/>
+in HTML ctrl scope Tax1 :: {{Tax1}}<br/>
+in HTML ctrl scope ukAddr :: {{ukAddr1}}<br/>
+
+
+
+<div>==================basic-scope3======2nd instance================</div>
+<basic-scope3
+  p-cus-name="{{parentCust2.pCusName}}"
+  parent-cust="parentCust2"
+  tax-click="parentGetTax1()"
+  find-addr="findUKAddr2(hNo, pCode)"
+  ></basic-scope3><br/>
+in HTML directive scope childName :: {{childName}}<br/>
+in HTML controller scope parentName :: {{parentName}}<br/>
+in HTML controller scope parentCust2.pCusName :: {{parentCust2.pCusName}}<br/>
+in HTML ctrl scope Tax1 :: {{Tax2}}<br/>
+in HTML ctrl scope ukAddr :: {{ukAddr2}}<br/>
+<br/><br/><br/>
+
+
+
+
+
+
+
+<shared-default-scope></shared-default-scope>
+<shared-inherited-child-scope></shared-inherited-child-scope>
+<isolated-scope></isolated-scope>
+
+
+
+
+<div>==================isolatedScopePassString======================</div>
+<div>
+  {{product1}}<br/>
+  <isolated-scope-pass-string name="{{product1.name}}" price="{{product1.price}}"
+  </isolated-scope-pass-string>
+</div>
+
+<br/>
+<div>
+  {{product2}}<br/>
+  <isolated-scope-pass-string name="{{product2.name}}" price="{{product2.price}}"
+  </isolated-scope-pass-string>
+</div>
+
+<br/><br/>
+<div>==================isolatedScopePassObject======================</div>
+
+<h1>{{product1.name}}</h1>
+<div>{{product1}}</div><br/>
+<isolated-scope-pass-object data="product1"></isolated-scope-pass-object>
+
+<h1>{{product2.name}}</h1>
+<div>{{product2}}</div><br/>
+<isolated-scope-pass-object data="product2"></isolated-scope-pass-object>
+
+<h1>{{product3.name}}</h1>
+<div>{{product3}}</div><br/>
+<isolated-scope-pass-object data="product3"></isolated-scope-pass-object>
+
+
+<br/><br/>
+<div>==================isolatedScopePassObject2======================</div>
+
+<h1>{{product1.name}}</h1>
+<div>{{product1}}</div><br/>
+<isolated-scope-pass-object data="product1"></isolated-scope-pass-object>
+
+
+
+<br/><br/>
+<div>==================isolatedScopePassObject3======================</div>
+
+<isolated-scope-pass-object3 data="product1"></isolated-scope-pass-object3>
+
+
+
+
+<div>==============isolatedScopeCallAsFunction===================</div>
+<div>
+  <!--<div isolated-scope-call-as-function callme="ShowData()">in</div>-->
+  <isolated-scope-call-as-function  callme="ShowData()"></isolated-scope-call-as-function>
+</div>
+
+
+<div>==============callAsFunctionWithParam==1=================</div>
+<div>
+  <call-as-function-with-param  callme="ShowDataParam(msg)"></call-as-function-with-param>
+</div>
+
+<div>==============callAsFunctionWithParam==2=================</div>
+<div>
+  <call-as-function-with-param  callme="ShowDataParam(msg)"></call-as-function-with-param>
+</div>
+
+<div>end</div>
+
+
+
+<div>==============callAsFunctionWithLink===============</div>
+<div>
+  <call-as-function-with-link   callme="submitHandler(firstName, lastName)">   </call-as-function-with-link>
+</div>
+
+<div>==============callAsFunctionWithLink2===============</div>
+<div>
+  <call-as-function-with-link2   title="Menu" items="items" clicksjp="AlertTransition(index)" ></call-as-function-with-link2>
+</div>
+
+
+
+isolatedScopePassObject
